@@ -11,7 +11,11 @@ export class TodoList extends Component {
     todoListElement.className = "todo-list"
 
     this.props.todos.forEach(todo => {
-      const todoItem = new TodoItem({ todo, todoContext: this.props.todoContext })
+      const todoItem = new TodoItem({
+        todo,
+        todoContext: this.props.todoContext,
+        updateTodoList: this.props.updateTodoList
+      })
 
       todoListElement.appendChild(todoItem.render())
     });

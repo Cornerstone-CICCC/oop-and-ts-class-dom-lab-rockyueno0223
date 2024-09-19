@@ -17,7 +17,8 @@ export class App extends Component {
 
     const todos = new TodoList({
       todoContext: this.todoContext,
-      todos: this.todoContext.getTodos()
+      todos: this.todoContext.getTodos(),
+      updateTodoList: this.updateTodoList
     }).render();
 
     todosContainer.appendChild(todos);
@@ -41,7 +42,8 @@ export class App extends Component {
 
     const todos = new TodoList({
       todoContext: this.todoContext,
-      todos: this.todoContext.getTodos()
+      todos: this.todoContext.getTodos(),
+      updateTodoList: this.updateTodoList
     }).render()
 
     container.querySelector('#wrapper-add').appendChild(add)

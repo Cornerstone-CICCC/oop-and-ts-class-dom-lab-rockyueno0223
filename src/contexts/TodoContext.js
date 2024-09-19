@@ -10,4 +10,8 @@ export class TodoContext {
   getTodos() {
     return this.todos
   }
+
+  deleteTodo(todo) {
+    this.todos = this.todos.filter(t => t !== todo)
+  }
 }
