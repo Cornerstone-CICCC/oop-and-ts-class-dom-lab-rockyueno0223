@@ -70,3 +70,9 @@ button {
   background-color: white;
   cursor: pointer;
 }
+
+/* added below */
+.complete{
+  color: lightgray;
+  text-decoration: line-through;
+}
